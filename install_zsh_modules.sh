@@ -14,6 +14,13 @@ echo
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions  
 
+echo "Install znap"
+echo
+
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git
+source zsh-snap/install.zsh
+
+echo
 echo "Installing neofetch"
 echo 
 
@@ -26,5 +33,6 @@ touch ~/.hushlogin
 
 echo "Modifying .zshrc file"
 echo 
+echo
 
-#cat ~/.zshrc
+wget https://github.com/vinzmhir/zshrc/blob/main/.zshrc
